@@ -1,0 +1,36 @@
+#############################
+# REST9 HTACCESS FILE
+# If you don't understand
+# what's going on here, better
+# not touch.
+#############################
+
+#############################
+# Routing
+#############################
+RewriteEngine on
+RewriteBase /rest9/
+RewriteRule ^api/(.*)$ rest.php?uri=$1
+
+#############################
+# Security
+#############################
+<Files cgi-bin>
+ Order Allow,Deny
+ Deny from all
+</Files>
+
+<FilesMatch "\.(htaccess|htpasswd|ini|phps|fla|inc.php|class.php)$">
+ Order Allow,Deny
+ Deny from all
+</FilesMatch>
+
+IndexIgnore *
+
+LimitRequestBody 10240000
+
+AddType application/x-httpd-php html
+
+<ifmodule mod_php4.c>
+ php_flag magic_quotes_gpc off
+</ifmodule>
