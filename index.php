@@ -9,8 +9,10 @@ $auth = new Auth (AUTH_TYPE);
 if (isset($_SERVER['HTTP_X_FORWARDED_FOR']))
 	$client_ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
 else
-	$client_ip = $['REMOTE_ADDR'];
+	$client_ip = $_SERVER['REMOTE_ADDR'];
 
+
+print_r($_REQUEST);die;
 $server = new REST_Server();
 $server->start_server ();
 
