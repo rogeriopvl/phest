@@ -1,8 +1,10 @@
 <?php
 
-define ('TABLE_NAME', 'concerts');
+// This class serves as an example for rest9
 
-class Concertos extends REST_Module
+define ('TABLE_NAME', 'example');
+
+class Example extends REST_Module
 {
 	private $db;
 	
@@ -39,7 +41,7 @@ class Concertos extends REST_Module
 	 * THink about another way to do this, not very nice the function check
 	 * for errors that should already be checked.
 	 */
-	public function get_concerto ($id=NULL)
+	public function get_example ($id=NULL)
 	{
 		if ($id === NULL)
 			return $this->error ("Missing argument: id");

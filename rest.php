@@ -52,7 +52,6 @@ class RequestHandler
 	
 	/**
 	 * Extracts the request information from the given URL
-	 * @param string $url the url to extract info
 	 * @return array associative array with the URL params parsed
 	 */
 	private function parse_request ()

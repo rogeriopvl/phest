@@ -20,16 +20,16 @@ class Auth
 	
 	/**
 	 * Checks the type of authentication and returns the right method
-	 * @param string $var the value, it can be an IP or APIKEY
+	 * @param string $value the value, it can be an IP or APIKEY
 	 * @return bool true if auth valid, false otherwise
 	 */
-	public function check_auth ($var)
+	public function check_auth ($value)
 	{
 		if ($this->type === "IP")
-			$valid = check_auth_by_IP ($var);
+			$valid = check_auth_by_IP ($value);
 			
 		else if ($this->type === "APIKEY")
-			$valid = check_auth_by_APIKEY ($var);
+			$valid = check_auth_by_APIKEY ($value);
 			
 		else
 			throw new Exception ("Wrong type of authentication.");
