@@ -12,7 +12,7 @@ else
 	$client_ip = $_SERVER['REMOTE_ADDR'];
 
 
-print_r($_REQUEST);die;
+//print_r($_REQUEST);die;
 $server = new REST_Server();
 $server->start_server ();
 

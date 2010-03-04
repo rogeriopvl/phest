@@ -9,12 +9,9 @@
 # Routing
 #############################
 RewriteEngine on
-#RewriteBase /rest9/
-#RewriteRule ^api/(.*)$ index.php?uri=$1
-RewriteCond %{REQUEST_FILENAME} -s [OR]
-RewriteCond %{REQUEST_FILENAME} -l
-RewriteRule ^.*$ - [NC,L]
-RewriteRule ^.*$ index.php?uri=$1
+#RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?uri=/$1
 
 #############################
 # Security
