@@ -16,6 +16,7 @@ define ('AUTH_TYPE', 'APIKEY');
 
 // the name of the folder to store your classes and helpers
 define ('CLASS_FOLDER', 'classes');
+define ('LIB_FOLDER', 'lib');
 define ('HELPER_FOLDER', 'helpers');
 
 // the name of the needed external classes

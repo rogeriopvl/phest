@@ -13,7 +13,7 @@ class Example extends REST_Module
 	 */
 	public function __construct ()
 	{
-		require_once (HELPER_FOLDER.'/DB.class.php');
+		require_once (LIB_FOLDER.'/DB.class.php');
 		
 		$this->db = new DB (DB_HOST, DB_NAME, DB_USER, DB_PASS);
 	}

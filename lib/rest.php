@@ -2,17 +2,6 @@
 
 require_once ('config.inc.php');
 
-$auth = new Auth (AUTH_TYPE);
-
-if ($HTTP_X_FORWARDED_FOR)
-	$client_ip = $HTTP_X_FORWARDED_FOR;
-else
-	$client_ip = $['REMOTE_ADDR'];
-
-$server = new REST_Server();
-$server->start_server ();
-
-
 /**
  * Main class that operates the REST server
  */

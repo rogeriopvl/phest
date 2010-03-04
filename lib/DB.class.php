@@ -3,9 +3,6 @@
 /**
  * Class that interacts with MySQL databases, and
  * provides a simple and abstract way to use.
- *
- * @author Rogerio Vicente <http://rogeriopvl.com>
- * @copyright 9views <http://9views.net>
  */
 class DB {
     

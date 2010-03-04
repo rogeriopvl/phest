@@ -10,7 +10,7 @@
 #############################
 RewriteEngine on
 RewriteBase /rest9/
-RewriteRule ^api/(.*)$ rest.php?uri=$1
+RewriteRule ^api/(.*)$ index.php?uri=$1
 
 #############################
 # Security
