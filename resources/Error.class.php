@@ -1,6 +1,6 @@
 <?php
 
-class Error extends REST_Module
+class Error extends Resource
 {
 	public function __construct () {}
 	

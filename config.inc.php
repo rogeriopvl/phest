@@ -10,14 +10,17 @@ define ('DB_NAME', 'database_name');	// change to the database name
 define ('DB_USER', 'root');				// obvious
 define ('DB_PASS', 'root');
 
+// set authentication on(true) or off(false)
+define ('AUTH_OPTION', false);
+
 // choose the type of authentication for your API
 // you can choose between APIKEY or IP for now
 define ('AUTH_TYPE', 'APIKEY');
 
 // the name of the folder to store your classes and helpers
-define ('CLASS_FOLDER', 'classes');
 define ('LIB_FOLDER', 'lib');
 define ('HELPER_FOLDER', 'helpers');
+define ('RESOURCE_FOLDER', 'resources');
 
 // the name of the needed external classes
 // the following are default values

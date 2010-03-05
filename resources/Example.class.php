@@ -4,7 +4,7 @@
 
 define ('TABLE_NAME', 'example');
 
-class Example extends REST_Module
+class Example extends Resource
 {
 	private $db;
 	

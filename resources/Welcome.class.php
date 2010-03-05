@@ -1,6 +1,6 @@
 <?php
 
-class Welcome extends REST_Module
+class Welcome extends Resource
 {
 	public function __construct () {}
 	
