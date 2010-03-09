@@ -51,7 +51,7 @@ class RequestHandler
 	}
 	
 	/**
-	 * Processes the request. Should only be used after
+	 * Processes the request.
 	 */
 	public function process_request ()
 	{

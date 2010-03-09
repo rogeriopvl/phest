@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * This is the gatekeeper of the API
+ */
+
 require_once ('base.inc.php');
 
 if (AUTH_OPTION === true)
@@ -8,9 +12,13 @@ if (AUTH_OPTION === true)
 }
 
 if (isset($_SERVER['HTTP_X_FORWARDED_FOR']))
+{
 	$client_ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+}
 else
+{
 	$client_ip = $_SERVER['REMOTE_ADDR'];
+}
 
 $server = new RestServer();
 $server->start_server ();

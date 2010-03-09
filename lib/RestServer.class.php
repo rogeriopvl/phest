@@ -10,20 +10,20 @@ class RestServer
 	/**
 	 * Constructor method
 	 */
-	public function __construct ()
+	public function __construct()
 	{
-		$this->request_handler = new RequestHandler ();
+		$this->request_handler = new RequestHandler();
 	}
 	
 	/**
 	 * Starts the REST server
 	 */
-	public function start_server ()
+	public function start_server()
 	{
-		$res = $this->request_handler->process_request ();
+		$res = $this->request_handler->process_request();
 
-		$response = new XMLResponse ($res);
-		$response->output ();
+		$response = new XmlResponse($res);
+		$response->output();
 	}
 }
 
